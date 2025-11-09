@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên kết của tôi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0a84ff, #00c9a7);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding: 30px 15px;
+    }
+    .container {
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+    a.link {
+      display: block;
+      background: white;
+      color: #0a84ff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 12px;
+      margin: 10px 0;
+      padding: 15px;
+      transition: 0.2s;
+    }
+    a.link:hover {
+      background: #e8f2ff;
+      transform: translateY(-2px);
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Liên kết của tôi</h1>
+    <p>Chào mừng! Dưới đây là các trang liên quan đến tôi 👇</p>
+
+    <a href="https://facebook.com" target="_blank" class="link">🌐 Facebook</a>
+    <a href="https://github.com" target="_blank" class="link">💻 GitHub</a>
+    <a href="https://zalo.me" target="_blank" class="link">💬 Zalo</a>
+    <a href="mailto:example@email.com" class="link">📧 Liên hệ qua Email</a>
+
+    <footer>© 2025 - tencongty.vn</footer>
+  </div>
+</body>
+</html>
