@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>@x_io_vn</title>
+  <meta name="description" content="Trang cá nhân của @x_io_vn – Việt Nam. Liên hệ qua X, Email, Zalo." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --accent: #2563eb;
+      --border: #e2e8f0;
+      --hover-bg: #f8fafc;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --text: #f1f5f9;
+        --accent: #60a5fa;
+        --border: #334155;
+        --hover-bg: #1e293b;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+      transition: background 0.3s ease;
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--border);
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    p.handle {
+      font-size: 1rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 1rem 1.5rem;
+      background: var(--bg);
+      border: 1.8px solid var(--border);
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.25s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .btn:hover {
+      border-color: var(--accent);
+      background: var(--hover-bg);
+      color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+    }
+
+    .btn svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .btn span {
+      flex: 1;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 1.5rem; }
+      .avatar { width: 80px; height: 80px; }
+      h1 { font-size: 1.4rem; }
+      .btn { padding: 0.9rem 1.2rem; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <!-- Thay bằng ảnh thật của bạn (upload lên imgur.com hoặc GitHub) -->
+    <img src="https://via.placeholder.com/96/2563eb/ffffff?text=@x" alt="Avatar @x_io_vn" class="avatar" />
+    <h1>@x_io_vn</h1>
+    <p class="handle">Việt Nam</p>
+  </div>
+
+  <div class="links">
+
+    <!-- X (Twitter) -->
+    <a href="https://x.com/x_io_vn" target="_blank" class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.9 1.3h3.8l-8.3 9.5 9.8 12.9h-7.6l-6-7.8-6.8 7.8H.1l8.9-10.2L0 1.3h7.8l5.4 7.1L18.9 1.3zM17.6 19.4h2.1L7.3 4.5H5l12.6 14.9z"/></svg>
+      <span>Theo dõi trên X</span>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:nghiem.truong@gmail.com" class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      <span>Gửi Email</span>
+    </a>
+
+    <!-- Zalo -->
+    <a href="https://zalo.me/0944448838" target="_blank" class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 15h-1v-5h-2v-2h2V8h1v7h2v2h-2v5zm6.5-5h-2V9h-1v3h-2V9h-1v4h-2v-4h-1v5h2v1h-2v2h2v1h-2v2h1v-2h2v2h1v-2h2v2h1v-2h-2v-1h2v-2z"/></svg>
+      <span>Nhắn Zalo</span>
+    </a>
+
+  </div>
+
+  <footer>
+    © 2025 @x_io_vn • Việt Nam
+  </footer>
+
+</body>
+</html>
