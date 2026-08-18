@@ -1,98 +1,49 @@
-
-<!DOCTYPE HTML>
-<html style="font-size: 20px;">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title></title>
-    
-    
-    <link rel='icon' type='image/x-icon' href='/favicon.ico'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X</title>
     <style>
-        
+        /* Đặt font Arial cho toàn bộ trang */
+        body, h1, h2, h3, p, ul, li, a, small {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Đảm bảo không có hiệu ứng mặc định ngoài text */
+        body {
+            margin: 40px;
+            line-height: 1.6;
+        }
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #551A8B;
+        }
+        hr {
+            border: 1px solid #ccc;
+            margin: 30px 0;
+        }
     </style>
-    <link rel='stylesheet' href='https://share.note.sx/css/bb/bb9740ced9b6850d308f2524c3c33968.css'>
-    <link rel='stylesheet' href='https://share.note.sx/assets/global-note-styles.css'>
-    <script src='https://share.note.sx/assets/app.js'></script>
-    
 </head>
-<body class="mod-windows is-frameless is-hidden-frameless obsidian-app styled-scrollbars show-inline-title is-floating-nav auto-full-screen show-ribbon show-view-header is-maximized is-focused share-note-plugin theme-light" style="--zoom-factor: 1; --font-interface-override: Inter; --font-text-override: Inter; --font-print-override: Inter; --font-text-size: 20px; --indent-size: 4;">
-<div class='app-container'>
-    <div class='horizontal-main-container'>
-        <div class='workspace'>
-            <div class='workspace-split mod-vertical mod-root'>
-                <div class='workspace-leaf mod-active'>
-                    <div class='workspace-leaf-content'>
-                        <div class='view-content'>
-                            <div class='markdown-reading-view' style='height:100%;width:100%;'>
-                                <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties">
-                                    <div class='markdown-preview-sizer markdown-preview-section'>
-                                        <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px;"></div>
-                                        <div id="template-user-data">Encrypted note</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class='status-bar' style='display:flex !important;position:fixed !important;'>
-        <div class='status-bar-item'>
-            <span class='status-bar-item-segment'><a href='https://note.sx/' target='_blank'>Share Note</a> for Obsidian</span>
-            <span id='theme-mode-toggle' class='status-bar-item-segment'>🌓</span>
-        </div>
-    </div>
-</div>
-<div id='encrypted-data' style='display: none'>{"ciphertext":["skIsYl/4k/nTFxbSmn7fYuVTYCOYXCLFNq0lTBP82K7vvmibWTwIa/qJtLGz4Onvx+1Jhyue/lrZinBzCusKoPwLoGDRGuJy0hoDyZvvmZhavhHYv+6/J9MNCvF1FE81UJsCBCoZi4qfSolg60qrfu/7ekc0DrJh84k6iz3bZDMRd5WZqEVCVcJwroi5JbBitNTpc1V4m7o4sazUiTgufDN32//6SIMtXhroCT6VzywVc4zKk2KbRt6YKYLYCYd/EyVyqnMo1t724nfP42VA0P4BqmUZW5sIgkAdSp35slsYNiaC4/wj+f9gz2SmkVzN+0Y0dPsKys3ouNf4TGYPt7MrQ98W9HLcE5sE412TFjGPACevRFhXUoBrKw13OxRofcg43lrrBgPIZW00VPTiiG6hOZGLzQu6CGr2hen4Vy+5F3ffpgiH8GcGt5r02SMHdZMK1vjFqLcFylOOlL0YNag97ZXWI/FPSV1Lwo+ZBHkCwdOsm6EqE0ZFQf5NGtRNEvMexSfk2DgKqq19QwnyGVraaasM7aaWSLGouqM8LUGDU5wBN5aN3TfGIVy1fpxFxa0AbOAHUIWz07Tcaxs7RUxY1WJGv9SCrGt1JBiWsqU+4Jesc9kgT8rs93AjmYZMGEy3flC9WKmc+ppsVJP37oHSYW/yKqmOC9do6ivJAPpYVZfFv7x63iLUGYLvuyMtnJ3MMYWiJUtxKYwm/qqYMjta3Ok82HRit9eFXrh8Zm8WX9zPfwbS0xGOZrUD6Hmt1CHaHS1RaVPhvDGUJHGQwTjcbRJ+eHtFgXkHTQcvCHK3XQMdf9bedovEqOXEIjtQO1kC9BSJNB0L4jWxUHo3/LtmkRnHUZAz+I6QsKbAEN+IbV0BF1jYCCaYwSGUP0VFt+1pRZlH/WPZgWQRydtaIgcBn2YaMtcrBdacUmbZYpmuuLbLpiAv7DdJfAmlF3g3ZApueDkBm5jzV7/T7jEbRR+6WuGryWrS7REg3KPVvnMw7uNmzPp/kZGQ6avhN1GRIjBfr/VW6QdWUxK5z3DKqvFv/H3sTmAQf3xVSm5GUpTm1pswpAaDF2Ta6uxdxEZZKfRE59r8P433dEN83mAjmRVh3DjrNPve00XcqiGfthTQXY3S5GMN57SryPnTJVN+4ZuXz/bantfrH0wA3AzkF8hzWOTWHNON2ZBQHIgmCKowbphTgN5ya6KpAijqvGbA7yQ8iuwI7OQjs1xwf8sn0pwp9UftDen4mznUFe/IQbYGP2ywxqk5R+0q3qG0GW+G5NowBNjdBPRECtRNShPIpWmzn9AWrZ+gMFJKCfn7lO4Xi2dkrTRoi1eerWRtT+ZLI28EyngX9Uv1czJt73Z5BhEZMeLKcAn1VMMZYoN/o9zTEpebW0MaZDNCoZOgI4/ict7Rg7Zkg+lHguxv9wc5PaSbZWGjAl1t8+Jh7yTyNl1For0KOLx/CtOIBE5xDpLcnj0Dkjn9yj7u9zyjPGGVtPucipiDEU0+4xN+cgakMJueoX1lVLJs49gZ5ozSK0klhJWmCF+wsSpoLV+Exqt1i1o7duk/hMvxrp0="],"ivs":["sHzz06qRkF//2iXO"]}</div>
-<script>function base64ToArrayBuffer (base64) {
-  const binaryString = atob(base64)
-  const bytes = new Uint8Array(binaryString.length)
-  for (let i = 0; i < binaryString.length; i++) {
-    bytes[i] = binaryString.charCodeAt(i)
-  }
-  return bytes.buffer
-}
-
-async function decryptString ({ ciphertext, ivs }, secret) {
-  const aesKey = await window.crypto.subtle.importKey('raw', base64ToArrayBuffer(secret), {
-    name: 'AES-GCM',
-    length: 256
-  }, false, ['decrypt'])
-
-  const plaintext = []
-  for (let index = 0; index < ciphertext.length; index++) {
-    const ciphertextBuf = base64ToArrayBuffer(ciphertext[index])
-    const iv = new Uint8Array(base64ToArrayBuffer(ivs[index]))
-    const plaintextChunk = await window.crypto.subtle
-      .decrypt({ name: 'AES-GCM', iv }, aesKey, ciphertextBuf)
-    plaintext.push(new TextDecoder().decode(plaintextChunk))
-  }
-  return plaintext.join('')
-}
-
-/*
-* Decrypt the original note content
-*/
-const encryptedData = document.getElementById('encrypted-data').innerText.trim()
-const payload = encryptedData ? JSON.parse(encryptedData) : ''
-const secret = window.location.hash.slice(1) // Taken from the URL # parameter
-if (payload && secret) {
-  decryptString(payload, secret)
-    .then(text => {
-      // Inject the user's data
-      const data = JSON.parse(text)
-      const contentEl = document.getElementById('template-user-data')
-      if (contentEl) contentEl.outerHTML = data.content
-      document.title = data.basename
-      initDocument()
-    })
-    .catch(() => {
-      const contentEl = document.getElementById('template-user-data')
-      if (contentEl) contentEl.innerHTML = 'Unable to decrypt using this key.'
-    })
-}
-</script>
+<body>
+<h3>Trình chiếu</h3>
+    <ul>
+        <li><a href="https://www.canva.com/design/DAGvcGVKvS8/go9yMdILw1LtCBADtCb9Bw/view?utm_content=DAGvcGVKvS8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he6a43ec0a9" class="link">Giải pháp kỹ thuật</a></li>
+    </ul>
+<h3>Giải pháp</h3>
+    <ul>
+        <li><a href="https://drive.google.com/file/d/1pRzAJRfVzaa7sqDinPSb6QORNlClynzl/view?usp=sharing" class="link">Hệ thống báo động chống cướp</a></li>
+        <li><a href="https://drive.google.com/file/d/1TypcEADNyZ8gIlotc6QCXAMgDlfpL-_E/view?usp=sharing" class="link">Hệ thống chống đột nhập có dây</a></li>
+        <li><a href="https://drive.google.com/file/d/14l2atooF9DbXcqD0B87_YqEWn8_7fBzK/view?usp=sharing" class="link">Hệ thống chống đột nhập không dây</a></li>
+        <li><a href="https://drive.google.com/file/d/1t4Gun24aYQPpK0C8H3PUXvnpPNA0lJCH/view?usp=sharing" class="link">Hệ thống báo động cây ATM</a></li>
+        <li><a href="https://drive.google.com/file/d/1qA3J_GibJV4p9sf3_P_r_36aVfM5UPDH/view?usp=sharing" class="link">Hệ thống giám sát hành trình</a></li>
+    </ul>
+<hr>
+    
+    <footer>
+        <p><small>© x.io.vn</small></p>
+    </footer>
 </body>
 </html>
